@@ -1,0 +1,23 @@
+server:
+  port: 6996
+  
+spring:
+  datasource:
+    jdbcUrl: jdbc:h2:~/database1
+    username: sa
+    password: 
+    
+  datasource2:
+    jdbcUrl: jdbc:h2:~/database2
+    username: sa
+    password: 
+    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true

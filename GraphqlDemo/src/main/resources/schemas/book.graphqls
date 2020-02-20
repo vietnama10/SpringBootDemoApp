@@ -1,0 +1,11 @@
+type Book {
+  id: ID!
+  name: String!
+  pageCount: Int!
+  author: Author!
+}
+
+extend type Query {
+	findAllBooks: [Book]
+	findBookById(id: ID!): Book
+}

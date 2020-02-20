@@ -1,0 +1,9 @@
+type Author {
+	id: ID!
+	firstName: String!
+	lastName: String!
+}
+
+extend type Query {
+	findAllAuthors: [Author]
+}
